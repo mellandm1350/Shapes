@@ -14,7 +14,7 @@ public class CuboidTest {
 
     @Test
     public void Constructor() {
-        shapes = new Cuboid(1, 1, 1);
+        shapes = new Cuboid(2, 2, 2);
 
         assertTrue(shapes instanceof Cuboid);
     }
@@ -38,17 +38,17 @@ public class CuboidTest {
 
     @Test
     public void surfaceArea() {
-        assertEquals(24.0, cuboid1.surfaceArea(), 0);
-        assertEquals(6.0, cuboid2.surfaceArea(), 0);
-        assertEquals(150.0, cuboid3.surfaceArea(), 0);
+        assertEquals(24.0, cuboid1.surfaceArea(), 0.01);
+        assertEquals(6.0, cuboid2.surfaceArea(), 0.01);
+        assertEquals(150.0, cuboid3.surfaceArea(), 0.01);
 
     }
 
     @Test
     public void volume() {
-        assertEquals(8.0, cuboid1.volume(), 0.0);
-        assertEquals(1.0, cuboid2.volume(), 0.0);
-        assertEquals(125.0, cuboid3.volume(), 0.0);
+        assertEquals(8.0, cuboid1.volume(), 0.01);
+        assertEquals(1.0, cuboid2.volume(), 0.01);
+        assertEquals(125.0, cuboid3.volume(), 0.01);
     }
 
 }

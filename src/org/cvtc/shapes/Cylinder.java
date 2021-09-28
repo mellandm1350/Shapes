@@ -40,10 +40,9 @@ public class Cylinder extends Shapes {
     @Override
     public float surfaceArea() {
         float circumferenceArea = (float) (Math.pow(radius,2) * pi);
-        float circumference = (2 * radius) * pi;
+        float circumference = 2 * radius * pi;
         float sideArea = (circumference * height);
-        float surfaceArea = (circumferenceArea * 2) + sideArea;
-        return surfaceArea;
+        return (circumferenceArea * 2) + sideArea;
     }
 
     @Override
